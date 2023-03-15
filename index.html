@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+    :root {
+      --violet: hsl(257, 40%, 49%);
+      --magenta: hsl(300, 69%, 71%);
+    }
+
+    h1,
+    h2 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    * {
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <main
+    class="min-h-screen relative bg-[var(--violet)] flex flex-col justify-center text-white py-28 md:px-16 md:flex-row md:items-center">
+
+    <!-- logo -->
+    <img class="absolute h-8 md:h-10 top-0 m-6 md:m-8 md:left-0 z-10 " src="./images/logo.svg" alt="">
+    <!-- links -->
+    <div class="absolute flex gap-3 justify-center bottom-10 z-10 inset-x-0 md:justify-end mx-12">
+      <a class=" h-8 w-8 flex items-center justify-center hover:text-[var(--magenta)] border hover:border-[var(--magenta)] rounded-full "
+        href="">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a class=" h-8 w-8 flex items-center justify-center hover:text-[var(--magenta)] border hover:border-[var(--magenta)] rounded-full "
+        href="">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a class=" h-8 w-8 flex items-center justify-center hover:text-[var(--magenta)] border hover:border-[var(--magenta)] rounded-full "
+        href="">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+    <!-- background -->
+    <img class="absolute inset-0  md:hidden" src="./images/bg-mobile.svg" alt="">
+    <img class="absolute inset-0 h-full hidden md:block" src="./images/bg-desktop.svg" alt="">
+
+    <section class="isolate order-2 md:order-1 p-8 space-y-4 w-full md:max-w-xl">
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center md:text-start">
+        Build The Community Your Fans Will Love
+      </h1>
+      <p class="text-center md:text-start">
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+        Create connections with your users as you engage in genuine discussion.
+      </p>
+
+      <a class="block text-[var(--violet)] bg-white py-2 px-16 rounded-full w-fit hover:bg-[var(--magenta)] mx-auto md:mx-0 md:px-10"
+        href="">
+        Register
+      </a>
+    </section>
+    <section class="isolate px-8">
+      <img src="./images/illustration-mockups.svg" alt="">
+    </section>
+
+  </main>
+
+</body>
+
+</html>
